@@ -4,10 +4,10 @@ while op != 3:
     print(20*"-","Digite (1) para Aprender","-"*20)
     print(20*"-","Digite (2) para fazer o Quiz","-"*20)
     print(20*"-","Digite (3) para encerrar o programa","-"*20)
-    op = int(input("\nDigite :"))
-    if op != 1 and op != 2 and op != 3:
+    op = str(input("\nDigite :"))
+    if op != "1" and op != "2" and op != "3":
         print("VALOR INVALIDO!, DIGITE UMA VALOR ENTRE 1 E 3")
-    if op == 1:
+    if op == "1":
         op1 = ''
         while op1 != "SAIR":
            print('\n',20*"=","BEM VINDO AO MENU APRENDER","="*20)
@@ -26,7 +26,7 @@ while op != 3:
                 print("Encerrou o programa Menu Aprender\n")
            else:
                 print("\n====================VALOR INVALIDO!, DIGITE PRINT ou INPUT====================\n")
-    elif op == 2:
+    elif op == '2':
         quiz = ''
         while quiz != 'A':
             print("\n============================01 Pergunta============================")
@@ -92,5 +92,5 @@ while op != 3:
             else:
                 print("VALOR INVÁLIDO, DIGITE NOVAMENTE\n")
                 print(20*'==')
-    elif op == 3:
+    elif op == '3':
             print("Programa Encerrado")
