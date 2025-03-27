@@ -6,7 +6,7 @@ while op != 3:
     print(20*"-","Digite (3) para encerrar o programa","-"*20)
     op = str(input("\nDigite :"))
     if op != "1" and op != "2" and op != "3":
-        print("VALOR INVALIDO!, DIGITE UMA VALOR ENTRE 1 E 3")
+        print("\nVALOR INVALIDO!, DIGITE UMA VALOR ENTRE 1 E 3\n")
     if op == "1":
         op1 = ''
         while op1 != "SAIR":
