@@ -13,14 +13,14 @@ while op != 3:
            print('\n',20*"=","BEM VINDO AO MENU APRENDER","="*20)
            print(16*'-',"Aqui você aprenderá sobre Input ou Print",16*'-')
            print(16*'-',"Digite 'SAIR' se desejar sair do Menu Aprender",16*'-')
-           op1 = str(input("\nDeseja Aprender Input ou Print ? :")).upper()
+           op1 = str(input("\nDeseja Aprender Input ou Print ? :")).strip().upper()
            if op1 == "INPUT":
                 print("\n----------------------------INPUT---------------------------------")
                 print("\nInput tem a função de receber dados do usuario. \nEx : input('Digite seu nome')\n")
                 print("---------------------------------------------------------------\n")
            elif op1 == "PRINT":
                 print("\n----------------------------PRINT---------------------------------")
-                print("\nPrint tem a função de imprimir algum texto\nEx : print('Ola Mundo')\n")
+                print("\nPrint tem a função de imprimir mensagens\nEx : print('Ola Mundo')\n")
                 print("---------------------------------------------------------------\n")
            elif op1 == "SAIR":
                 print("Encerrou o programa Menu Aprender\n")
@@ -35,7 +35,7 @@ while op != 3:
             print("B) Esporte.")
             print("C) Marca de Carro.")
             print("D) Tipo de Sofware.")
-            quiz = str(input("\nDigite a Alternativa Correta :")).upper()
+            quiz = str(input("\nDigite a Alternativa Correta :")).strip().upper()
             if quiz == "A":
                 print("\nAternativa correta!\n")
                 print('======================================================================')
@@ -57,7 +57,7 @@ while op != 3:
             print("B) Deletar o Windows.")
             print("C) Receber dados.")
             print("D) Imprimir algum texto.")
-            quiz_1 = str(input("\nDigite a Alternativa Correta :")).upper()
+            quiz_1 = str(input("\nDigite a Alternativa Correta :")).strip().upper()
             if quiz_1 == "A":
                 print("Alternativa ERRADA!, TENTE NOVAMENTE")
             elif quiz_1 == "B":
@@ -65,7 +65,7 @@ while op != 3:
             elif quiz_1 == "C":
                 print("Alternativa ERRADA! , TENTE NOVAMENTE")
             elif quiz_1 == "D":
-                print("\nAlternativa correta!")
+                print("\nAlternativa correta!\n")
                 print('======================================================================')
             else:
                 print("VALOR INVÁLIDO, DIGITE NOVAMENTE\n")
@@ -78,7 +78,7 @@ while op != 3:
             print("B) Deletar o Windows.")
             print("C) Receber dados.")
             print("D) Abrir o navegador.")
-            quiz_2 = str(input("\nDigite a Alternativa Correta :")).upper()
+            quiz_2 = str(input("\nDigite a Alternativa Correta :")).strip().upper()
             if quiz_2 == "A":
                 print("Alternativa ERRADA!, TENTE NOVAMENTE")
                 break
@@ -94,3 +94,4 @@ while op != 3:
                 print(20*'==')
     elif op == '3':
             print("Programa Encerrado")
+            break
